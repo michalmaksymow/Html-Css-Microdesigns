@@ -313,3 +313,46 @@ header {
   color: #555;
   border-bottom: 1px solid transparent;
 }
+
+/* --------------------------------- */
+/* Testimonials                      */
+/* --------------------------------- */
+.section-testimonials {
+  /* darkened background image using linear gradient. useful */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(resources/css/img/back-customers.jpg);
+  /* Scale image to browser size. useful */
+  background-size: cover;
+  /* Background image always stays in the same place. useful */
+  background-attachment: fixed;
+  color: #fff;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 500%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
