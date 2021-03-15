@@ -109,7 +109,7 @@ h2::after {
 /* Buttons */
 .btn:link,
 .btn:visited,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -119,7 +119,7 @@ input[type=submit] {
 }
 .btn-full:link,
 .btn-full:visited,
-input[type=submit]{
+input[type="submit"] {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   border-radius: 200px;
@@ -133,13 +133,12 @@ input[type=submit]{
 }
 .btn:hover,
 .btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #cf6d17;
 }
 .btn-full:hover,
-.btn-full:active
-input[type=submit] {
+.btn-full:active input[type="submit"] {
   background-color: #cf6d17;
 }
 .btn-ghost:hover,
@@ -425,8 +424,8 @@ cite img {
   margin: 0 auto;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 100%;
@@ -439,7 +438,7 @@ textarea {
   height: 100px;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   margin: 10px 5px 10px 0;
 }
 
@@ -450,3 +449,75 @@ input[type=checkbox] {
 /* --------------------------------- */
 /* Footer                            */
 /* --------------------------------- */
+footer {
+  background-color: #333;
+  padding: 40px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 170%;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer ion-icon {
+  transition: color 0.2s;
+}
+
+footer ion-icon[name="logo-facebook"]:hover {
+  color: #3b5998;
+}
+
+footer ion-icon[name="logo-twitter"]:hover {
+  color: #00aced;
+}
+
+footer ion-icon[name="logo-google"]:hover {
+  color: #dd4b39;
+}
+
+footer ion-icon[name="logo-instagram"]:hover {
+  color: #517fa4;
+}
