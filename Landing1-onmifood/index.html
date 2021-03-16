@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
+    <link rel="stylesheet" href="vendors/css/animate.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
   </head>
@@ -35,8 +36,8 @@
           Goodbye junk food.<br />
           Hello super healthy meals.
         </h1>
-        <a class="btn btn-full" href="#">I'm hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
       </div>
     </header>
 
@@ -48,7 +49,7 @@
           cooking. So let us take care of that, we're really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row animation-invisible js--waypoint-1">
         <div class="col span-1-of-4 box">
           <ion-icon name="infinite-outline" class="icon-big"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -273,7 +274,7 @@
       </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
@@ -453,4 +454,4 @@
   </body>
 </html>
 
-<!-- 7.2 -->
+<!-- 7.6 -->

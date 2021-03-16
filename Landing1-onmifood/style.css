@@ -557,3 +557,15 @@ footer ion-icon[name="logo-google"]:hover {
 footer ion-icon[name="logo-instagram"]:hover {
   color: #517fa4;
 }
+
+/* --------------------------------- */
+/* Animations                        */
+/* --------------------------------- */
+.animation-invisible {
+  opacity: 0;
+}
+
+.animation-invisible.animated {
+  opacity: 1;
+  transition: opacity 0.9s;
+}
