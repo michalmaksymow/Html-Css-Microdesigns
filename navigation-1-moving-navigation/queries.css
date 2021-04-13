@@ -5,4 +5,7 @@
   nav .nav-list-item {
     margin: 0 0.5em;
   }
+  nav {
+    padding: .5em 0;
+  }
 }
