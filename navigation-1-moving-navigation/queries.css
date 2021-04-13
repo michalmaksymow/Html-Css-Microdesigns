@@ -1,0 +1,8 @@
+@media screen and (max-width: 754px) {
+  .container-nav {
+    flex-direction: column;
+  }
+  nav .nav-list-item {
+    margin: 0 0.5em;
+  }
+}

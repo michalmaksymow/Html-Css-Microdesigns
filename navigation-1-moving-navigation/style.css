@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dbr {
+  border: 1px solid red;
+}
+
+.container {
+  /* border: solid 1px red; */
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+
+header h1 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #143774;
+}
+
+header p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #1792d2;
+}
+
+nav .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-list-item {
+  /* border: 1px dotted red; */
+  padding: 0.5em 0;
+  margin-left: 1em;
+}
+
+nav .nav-link {
+  padding: 0.25em 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  color: #707070;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: color 0.2s ease-in;
+}
+
+nav .current-page {
+  border-bottom: 1px solid #707070;
+}
+
+nav .nav-link:hover,
+nav .nav-link:focus {
+  cursor: pointer;
+  color: #1792d2;
+}
+
+nav .nav-link:hover.current-page,
+nav .nav-link:focus.current-page {
+  color: #707070;
+}
