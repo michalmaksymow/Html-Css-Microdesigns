@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.section-header {
+  background-color: #ececec;
+  padding: .5em 0;
+}
+
+/* ---------------------- */
+/* TYPOGRAPHY             */
+/* ---------------------- */
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #4b4b4b;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #4b4b4b;
+  text-decoration: none;
+
+  transition: color .3s ease;
+}
+
+.nav-link:hover {
+  color: #949494;
+}
+
+.nav-link:focus,
+.nav-link:active {
+  cursor: pointer;
+  color: #4b4b4b;
+}
+
+/* ---------------------- */
+/* CONTENT                */
+/* ---------------------- */
+.container {
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-text {
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  font-size: 1rem;
+  margin-left: 1em;
+  padding: 1em 0;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #4b4b4b;
+  margin: 4px;
+}
+
+@media screen and (max-width: 636px) {
+  
+}
