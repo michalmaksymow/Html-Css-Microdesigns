@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* VARIABLES */
+:root {
+  --main-color: rgb(231, 245, 245);
+  --background-color: #111;
+}
+
+/* ----------------------- */
+/* TYPOGRAPHY              */
+/* ----------------------- */
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--main-color);
+  color: azure;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+nav ul li a {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid var(--main-color);
+}
+
+nav ul li a:focus,
+nav ul li a:active {
+  color: var(--main-color);
+}
+
+/* ----------------------- */
+/* CONTENT                 */
+/* ----------------------- */
+header {
+  background-color: var(--background-color);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+/* Toggle button */
+.button-toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 1.5rem;
+  transform: translate(0, -50%);
+  font-size: 1.5rem;
+}
+
+.button-toggle:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 578px) {
+  .button-toggle {
+    display: block;
+  }
+  .container-nav nav ul { 
+    display: none;
+  }
+  .container-nav.expanded nav ul { 
+    display: block;
+  }
+  h1 {
+    text-align: left;
+  }
+  .container-nav.expanded nav ul li {
+    text-align: right;
+    margin: 1em 0;
+  } 
+  .container-nav.expanded {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
