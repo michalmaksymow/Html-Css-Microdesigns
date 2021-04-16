@@ -21,13 +21,6 @@ h1 {
   color: #4b4b4b;
 }
 
-p {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-
 .nav-link {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -56,6 +49,7 @@ p {
   max-width: 960px;
   width: 90%;
   margin: 0 auto;
+  position: relative;
 
   display: flex;
   justify-content: space-between;
@@ -79,6 +73,7 @@ p {
 
 .burger {
   display: none;
+  cursor: pointer;
 }
 
 .burger div {
@@ -89,5 +84,22 @@ p {
 }
 
 @media screen and (max-width: 636px) {
+  .burger {
+    display: block;
+  }
   
+  .nav-list {
+    position: absolute;
+    left: 50%;
+    top: 300%;
+    transform: translate(-50%, -50%);
+    background-color: #ececec;
+
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-left: 0;
+  }
 }
