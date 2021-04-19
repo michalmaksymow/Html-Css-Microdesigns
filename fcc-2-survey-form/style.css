@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap");
 
 :root {
   --color-primary: #eeeeee;
@@ -6,7 +6,9 @@
   --color-secondary: #00579e;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -72,7 +74,7 @@ form select {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
@@ -83,5 +85,7 @@ form select:focus {
   outline: none;
 }
 
-
-
+.preference input {
+  margin-right: 0.5rem;
+  width: auto;
+}
