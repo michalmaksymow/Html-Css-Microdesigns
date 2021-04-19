@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Survey form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="section-header">
+        <h1 id="title">Survey form</h1>
+        <p id="description">Plese help us to improve our platform by filling out this survey</p>
+      </header>
+
+      <main class="section-main">
+        <form id="survey-form">
+          <div class="input-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required />
+          </div>
+
+          <div class="input-group">
+            <label id="email-label" for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail" required />
+          </div>
+
+          <div class="input-group">
+            <label id="number-label" for="age">Age <span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="age" placeholder="Enter your age" min="10" max="150" required />
+          </div>
+
+          <div class="input-group">
+            <p>How did you found our platform?</p>
+            <select name="source" id="dropdown" required>
+              <option disabled selected value>Select option...</option>
+              <option value="google">Google search</option>
+              <option value="friend">Friend or familiy member</option>
+              <option value="ad">Ad on forum</option>
+              <option value="youtube">YouTube</option>
+              <option value="other">Other...</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <p>Would you recommend this platform to a friend?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
