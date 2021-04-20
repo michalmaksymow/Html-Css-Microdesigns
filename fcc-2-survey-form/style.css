@@ -50,7 +50,7 @@ p {
 }
 
 .input-group {
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .flex-group {
@@ -70,7 +70,9 @@ form p {
 }
 
 form input,
-form select {
+form select,
+.input-textarea,
+.submit-button {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   width: 100%;
@@ -81,11 +83,22 @@ form select {
 }
 
 form input:focus,
-form select:focus {
+form select:focus,
+.input-textarea {
   outline: none;
 }
 
 .preference input {
   margin-right: 0.5rem;
   width: auto;
+}
+
+.input-textarea {
+  height: 10rem;
+}
+
+.submit-button {
+  color: white;
+  font-weight: 700;
+  background-color: #2dbd64;
 }
