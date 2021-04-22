@@ -11,12 +11,12 @@ body {
 }
 
 .container {
+  width: 90%;
   max-width: 1080px;
   margin: 0 auto;
 }
 
 .section-header {
-  padding: .5rem;
   color: white;
   background-color: #003d7a;
 }
@@ -37,6 +37,30 @@ body {
 }
 
 .nav-flex {
+  padding: .5rem 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-item {
+  margin-left: 1.5rem;
+  transition: transform 0.1s ease-in;
+}
+
+.nav-list-item:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
