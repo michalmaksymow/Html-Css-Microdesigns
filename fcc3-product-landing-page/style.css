@@ -67,6 +67,14 @@ body {
   font-size: 1.25rem;
 }
 
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+}
+.nav-toggle:hover {
+  cursor: pointer;
+}
+
 .subscribe {
   margin: 3rem auto;
   width: fit-content;
