@@ -43,6 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav-list {
@@ -69,6 +70,10 @@ body {
 
 .nav-toggle {
   display: none;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  transform: translate(0, -50%);
   font-size: 1.5rem;
 }
 .nav-toggle:hover {
