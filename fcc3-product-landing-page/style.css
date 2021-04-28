@@ -12,11 +12,15 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 .container {
   width: 90%;
   max-width: 1180px;
   margin: 0 auto;
+}
+.flex-container {
+  display: flex;
 }
 .section-title {
   padding: 1em;
@@ -89,12 +93,13 @@ body {
 /* ------------------------------ */
 .subscribe {
   margin: 3rem auto;
-  width: fit-content;
+  display: inline-block;
 }
 .subscribe h2 {
   font-size: 1.5rem;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
 }
 .form-subscribe {
   display: flex;
@@ -138,6 +143,7 @@ body {
   display: flex;
 }
 .us-sect-text {
+  flex-grow: 62;
   margin-left: 1.5rem;
 }
 .us-sect-text#stick-right {
@@ -153,6 +159,12 @@ body {
   line-height: 1.5rem;
   font-size: 1rem;
   font-weight: 300;
+}
+.us-sect-img {
+  flex-flow: 38;
+  display: block;
+  max-width: 450px;
+  height: auto;
 }
 .us-sect-link {
   display: inline-block;
