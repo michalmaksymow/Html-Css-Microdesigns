@@ -143,8 +143,11 @@ body {
   display: flex;
 }
 .us-sect-text {
-  flex-grow: 62;
+  flex: 62 5 563px;
   margin-left: 1.5rem;
+}
+.us-sect-div-img {
+  flex: 38 1 345px;
 }
 .us-sect-text#stick-right {
   margin-left: 0;
@@ -161,9 +164,7 @@ body {
   font-weight: 300;
 }
 .us-sect-img {
-  flex-flow: 38;
-  display: block;
-  max-width: 450px;
+  max-width: 100%;
   height: auto;
 }
 .us-sect-link {
