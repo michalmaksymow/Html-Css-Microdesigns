@@ -7,37 +7,43 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Poppins", sans-serif;
 }
-
 .container {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
 }
+.section-title {
+  padding: 1em;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.section-title-span {
+  color: #003d7a;
+}
 
+/* ------------------------------ */
+/* Section - HEADER + NAV         */
+/* ------------------------------ */
 .section-header {
   color: white;
   background-color: #003d7a;
 }
-
 .logo-title {
   display: flex;
   align-items: center;
 }
-
 .img-logo {
   fill: white;
   margin-right: 0.5rem;
 }
-
 .section-header h1 {
   font-size: 700;
   font-style: italic;
 }
-
 .nav-flex {
   padding: 0.5rem 0;
   display: flex;
@@ -45,21 +51,17 @@ body {
   justify-content: space-between;
   position: relative;
 }
-
 .nav-list {
   list-style: none;
   display: flex;
 }
-
 .nav-list-item {
   margin-left: 1.5rem;
   transition: transform 0.1s ease-in;
 }
-
 .nav-list-item:hover {
   transform: scale(1.05);
 }
-
 .nav-link {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -67,7 +69,6 @@ body {
   font-weight: 500;
   font-size: 1.25rem;
 }
-
 .nav-toggle {
   display: none;
   position: absolute;
@@ -80,24 +81,24 @@ body {
   cursor: pointer;
 }
 
+/* ------------------------------ */
+/* Section - CALL TO ACTION       */
+/* ------------------------------ */
 .subscribe {
   margin: 3rem auto;
   width: fit-content;
 }
-
 .subscribe h2 {
   font-size: 1.5rem;
   font-weight: 700;
   font-style: normal;
 }
-
 .form-subscribe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .input-email {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -107,7 +108,6 @@ body {
 .input-email:focus {
   outline: none;
 }
-
 .input-subscribe {
   margin-top: 0.5em;
   background-color: #003d7a;
@@ -119,8 +119,30 @@ body {
   border-radius: 5px;
   transition: transform .2s linear;
 }
-
 .input-subscribe:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+/* ------------------------------ */
+/* Section - US                   */
+/* ------------------------------ */
+#us {
+  background-color: #cae4ff;
+}
+.us-sect {
+  display: flex;
+}
+.us-sect-text {
+  margin-left: 1.5rem;
+}
+.us-sect-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: .5rem;
+}
+.us-sect-p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
