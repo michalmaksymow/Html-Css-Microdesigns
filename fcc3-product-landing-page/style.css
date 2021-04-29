@@ -28,7 +28,7 @@ body {
   font-size: 2.5rem;
   font-weight: 500;
 }
-.section-title-span {
+.span-main-color {
   color: var(--color-main);
 }
 
@@ -86,6 +86,18 @@ body {
 }
 .nav-toggle:hover {
   cursor: pointer;
+}
+
+/* ------------------------------ */
+/* Section - WELCOME              */
+/* ------------------------------ */
+#welcome {
+  margin-top: 7rem;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ------------------------------ */
