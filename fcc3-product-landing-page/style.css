@@ -97,7 +97,51 @@ body {
 
 .welcome-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.welcome-part-text {
+  flex: 4;
+}
+.welcome-part-img {
+  flex: 5;
+}
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  margin-bottom: 1.25rem;
+}
+.welcome-subtitle {
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: rgb(124, 124, 124);
+  margin-bottom: 1.25rem;
+}
+.welcome-btn {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.75em 1.25em;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 0.75rem;
+  transition: transform 0.2s linear;
+}
+.welcome-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 3px 10px rgb(219, 219, 219);
+}
+.welcome-btn.btn-plans {
+  color: white;
+  background-color: var(--color-main);
+}
+.welcome-btn.btn-about {
+  color: var(--color-main);
+  background-color: rgb(235, 232, 232);
+}
+.welcome-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ------------------------------ */
