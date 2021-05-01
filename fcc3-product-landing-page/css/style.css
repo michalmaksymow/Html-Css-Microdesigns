@@ -204,6 +204,7 @@ body {
 }
 .us-sect-div-img {
   flex: 38 1 345px;
+  opacity: 0;
 }
 .us-sect-text#stick-right {
   margin-left: 0;

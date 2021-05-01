@@ -15,6 +15,10 @@
     transform: translateX(-100px);
   }
 
+  80% {
+    transform: translateX(10px);
+  }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -31,6 +35,13 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.js--animate-1.anim__move-left-1 {
+  animation: moveInLeft 0.7s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  opacity: 1;
 }
 
 .anim__move-bottom-1 {
