@@ -1,21 +1,60 @@
-@media screen and (max-width: 1140px) {
-
+/* 1041px */
+/* ================================== */
+@media screen and (max-width: 1041px) {
+  /* Section - WELCOME  */
+  .welcome-title {
+    font-size: 2.25rem;
+  }
+  .welcome-subtitle {
+    font-size: 1rem;
+  }
 }
+/* 887px */
+/* ================================== */
 @media screen and (max-width: 887px) {
-  /* Section - US                   */
+  /* Section - WELCOME  */
+  #welcome {
+    margin-top: 4rem;
+  }
+  .welcome-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .welcome-part-img {
+    max-height: fit-content;
+    order: -1;
+    flex: 1;
+  }
+  .welcome-part-text {
+    margin-top: 2rem;
+    flex: 1;
+  }
+  .welcome-title,
+  .welcome-subtitle {
+    text-align: center;
+  }
+  .welcome-btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Section - US */
   .us-sect-title {
     font-size: 1.4rem;
   }
   .us-sect-p {
     line-height: 1.4rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .us-sect-link {
     font-size: 1rem;
   }
 }
+
+/* 676px */
+/* ================================== */
 @media screen and (max-width: 676px) {
-  /* Section - HEADER + NAV         */
+  /* Section - HEADER + NAV */
   .nav-bar.hidden {
     display: none;
   }
@@ -36,7 +75,7 @@
     display: block;
   }
 
-  /* Section - US                   */
+  /* Section - US */
   .us-sect {
     flex-direction: column;
     align-items: center;
