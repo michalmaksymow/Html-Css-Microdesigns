@@ -94,7 +94,6 @@ body {
 #welcome {
   margin-top: 7rem;
 }
-
 .welcome-container {
   display: flex;
   align-items: center;
@@ -185,7 +184,8 @@ body {
 }
 .input-subscribe:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 2px 3px 10px rgb(219, 219, 219);
 }
 
 /* ------------------------------ */
