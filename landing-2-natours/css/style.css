@@ -70,13 +70,9 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-
   animation-name: moveInLeft;
   animation-duration: 0.6s;
   animation-timing-function: ease-out;
-
-  /* animation-iteration-count: 2; */
-  /* animation-delay: 3s; */
 }
 
 .heading-primary-sub {
@@ -84,7 +80,6 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.7rem;
-
   /* Same as animation-name, animation-duration, animation-timing-function */
   animation: moveInRight 0.6s ease-out;
 }
@@ -140,7 +135,6 @@ body {
 
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
-
-  /* Sets style of 0% of animation */
+  /* Sets initial style of 0% of animation */
   animation-fill-mode: backwards;
 }
