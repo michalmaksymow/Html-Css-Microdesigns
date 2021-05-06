@@ -187,12 +187,24 @@ body {
   transform: translateY(-5px);
   box-shadow: 2px 3px 10px rgb(219, 219, 219);
 }
+#subscribe {
+  position: relative;
+}
+#subscribe::after {
+  content: "";
+  width: 100%;
+  border-bottom: solid 1px rgb(224, 224, 224);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+}
 
 /* ------------------------------ */
 /* Section - ABOUT US             */
 /* ------------------------------ */
 #us {
-  background-color: #cae4ff;
+  background-color: #ffffff;
 }
 .us-sect {
   padding-bottom: 5rem;
@@ -204,7 +216,6 @@ body {
 }
 .us-sect-div-img {
   flex: 38 1 345px;
-  opacity: 0;
 }
 .us-sect-text#stick-right {
   margin-left: 0;
