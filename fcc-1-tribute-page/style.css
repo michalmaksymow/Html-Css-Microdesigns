@@ -60,12 +60,16 @@ body {
   font-style: italic;
 }
 
+/* This is not done as it should be */
+/* After should be after section with */
+/* width = 100vw, but then it would not */
+/* fulfill FCC user stories  */
 .heading-image-container::after {
   content: "";
   width: 220%;
   border-bottom: solid 1px rgb(170, 170, 170);
   position: absolute;
-  left: -20%;
+  left: -40%;
   top: 100%;
   z-index: 1;
 }
@@ -92,4 +96,23 @@ body {
 
 .info-text-bold {
   font-weight: 600;
+}
+
+.info-text-quotation {
+  padding: 0.75rem 0;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.info-text-ending {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.info-text-link:link, 
+.info-text-link:visited {
+  color: rgb(0, 73, 116);
 }
