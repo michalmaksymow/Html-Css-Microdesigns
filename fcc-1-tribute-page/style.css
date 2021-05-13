@@ -13,6 +13,7 @@ body {
   font-family: "Asap", sans-serif;
   font-weight: 400;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 .container {
@@ -23,7 +24,7 @@ body {
 
 .heading-text-container {
   text-align: center;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 .heading-title {
@@ -40,9 +41,11 @@ body {
 }
 
 .heading-image-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 3rem;
 }
 
 .heading-image {
@@ -52,6 +55,41 @@ body {
 }
 
 .heading-image-caption {
+  text-align: center;
   font-size: 0.9rem;
   font-style: italic;
+}
+
+.heading-image-container::after {
+  content: "";
+  width: 220%;
+  border-bottom: solid 1px rgb(170, 170, 170);
+  position: absolute;
+  left: -20%;
+  top: 100%;
+  z-index: 1;
+}
+
+.info-text-heading {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.info-text-list {
+  width: 80%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.info-text-list-element {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.info-text-bold {
+  font-weight: 600;
 }
