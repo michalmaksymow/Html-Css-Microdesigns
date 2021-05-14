@@ -90,9 +90,9 @@ body {
         content: "\f3b8";
         font-family: "Font Awesome 5 Brands";
         font-size: 2rem;
-        color: #acacac;
+        color: #777777;
         position: absolute;
         top: -3px;
-        right: 1px; }
+        right: 0; }
     .main-article-pointed {
       margin-left: 1.5rem; }
