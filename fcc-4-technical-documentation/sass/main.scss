@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500&display=swap");
 
 $font-stack: "Roboto", sans-serif;
-$color-navbar-background: rgb(245, 245, 245);
+$color-navbar-background: #f5f5f5;
+$color-code-background: #e6e6e6;
 $color-logo: #f0db4f;
 
 *,
@@ -50,7 +51,7 @@ body {
   }
 
   &-list-item {
-    padding: 0.25rem .75rem;
+    padding: 0.25rem 0.75rem;
   }
 }
 
@@ -77,7 +78,7 @@ body {
     &::before {
       position: absolute;
       content: "";
-      width: 3px;
+      width: 5px;
       height: 1.1rem;
       background-color: $color-logo;
       top: 2px;
@@ -85,3 +86,58 @@ body {
     }
   }
 }
+
+.main {
+  max-height: 100vh;
+  overflow-y: scroll;
+
+  &-section {
+    margin: 1rem auto;
+    width: 90%;
+
+    &-header {
+      padding: 1rem 0;
+    }
+
+    &-title {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &-article {
+    margin-left: 1.1rem;
+
+    &-text {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      font-weight: 300;
+      margin-bottom: 1.1rem;
+    }
+
+    &-code {
+      padding: 1.1rem;
+      margin-bottom: 1.1rem;
+      display: block;
+      background-color: $color-code-background;
+      font-size: 1rem;
+      border-radius: 10px 0 10px 0;
+      position: relative;
+
+      &::before {
+        content: "\f3b8";
+        font-family: "Font Awesome 5 Brands";
+        font-size: 2rem;
+        color: #acacac;
+        position: absolute;
+        top: -3px;
+        right: 1px;
+      }
+    }
+
+    &-pointed{
+      margin-left: 1.5rem;
+    }
+  }
+} //.main

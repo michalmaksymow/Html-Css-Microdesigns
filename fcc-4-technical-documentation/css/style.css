@@ -16,7 +16,7 @@ body {
   display: flex; }
 
 .navbar {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   min-width: 290px;
   height: 100vh; }
   .navbar-header {
@@ -33,7 +33,7 @@ body {
     font-style: italic;
     font-size: 1rem; }
   .navbar-list-item {
-    padding: 0.25rem .75rem; }
+    padding: 0.25rem 0.75rem; }
 
 .nav-link:link, .nav-link:visited {
   display: block;
@@ -53,8 +53,46 @@ body {
   .nav-link.active::before {
     position: absolute;
     content: "";
-    width: 3px;
+    width: 5px;
     height: 1.1rem;
     background-color: #f0db4f;
     top: 2px;
     left: -10px; }
+
+.main {
+  max-height: 100vh;
+  overflow-y: scroll; }
+  .main-section {
+    margin: 1rem auto;
+    width: 90%; }
+    .main-section-header {
+      padding: 1rem 0; }
+    .main-section-title {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.5px; }
+  .main-article {
+    margin-left: 1.1rem; }
+    .main-article-text {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      font-weight: 300;
+      margin-bottom: 1.1rem; }
+    .main-article-code {
+      padding: 1.1rem;
+      margin-bottom: 1.1rem;
+      display: block;
+      background-color: #e6e6e6;
+      font-size: 1rem;
+      border-radius: 10px 0 10px 0;
+      position: relative; }
+      .main-article-code::before {
+        content: "\f3b8";
+        font-family: "Font Awesome 5 Brands";
+        font-size: 2rem;
+        color: #acacac;
+        position: absolute;
+        top: -3px;
+        right: 1px; }
+    .main-article-pointed {
+      margin-left: 1.5rem; }
