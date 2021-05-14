@@ -4,7 +4,7 @@
   "description": "A FreeCodeCamp.org project",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css --watch"
   },
   "author": "mmxm",
   "license": "ISC",
