@@ -334,25 +334,98 @@
             <code class="main-article-code">
               if (condition_1) { statement_1; } else if (condition_2) { statement_2; } else if (condition_n) { statement_n; } else { statement_last; }
             </code>
-            <p>
+            <p class="main-article-text">
               In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple
               statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially
               when nesting if statements:
             </p>
-            <code>
+            <code class="main-article-code">
               if (condition) { statement_1_runs_if_condition_is_true; statement_2_runs_if_condition_is_true; } else {
               statement_3_runs_if_condition_is_false; statement_4_runs_if_condition_is_false; }
             </code>
-            <p>
+            <p class="main-article-text">
               It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when
               glancing over the code. For example, do not use the following code:
             </p>
-            <code>if (x = y) { /* statements here */ }</code>
-            <p>
+            <code class="main-article-code">if (x = y) { /* statements here */ }</code>
+            <p class="main-article-text">
               If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment.
               For example:
             </p>
-            <code>if ((x = y)) { /* statements here */ }</code>
+            <code class="main-article-code">if ((x = y)) { /* statements here */ }</code>
+          </article>
+        </section>
+
+        <section class="main-section" id="while_statement">
+          <header class="main-section-header">
+            <h2 class="main-section-title">while statement</h2>
+          </header>
+          <article class="main-article">
+            <p class="main-article-text">
+              A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
+            </p>
+            <code class="main-article-code"> while (condition) statement </code>
+            <p class="main-article-text">
+              If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+            </p>
+            <p class="main-article-text">
+              The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the
+              condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
+            </p>
+            <p class="main-article-text">To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
+            <p class="main-article-text">Example:</p>
+            <p class="main-article-text">The following while loop iterates as long as n is less than three:</p>
+            <code class="main-article-code">var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+            <p class="main-article-text">
+              With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:
+            </p>
+            <ul class="main-article-pointed">
+              <li class="main-article-text">After the first pass: n = 1 and x = 1</li>
+              <li class="main-article-text">After the second pass: n = 2 and x = 3</li>
+              <li class="main-article-text">After the third pass: n = 3 and x = 6</li>
+            </ul>
+            <p class="main-article-text">After completing the third pass, the condition n &lt; 3 is no longer true, so the loop terminates.</p>
+          </article>
+        </section>
+
+        <section class="main-section" id="Function_declarations">
+          <header class="main-section-header">
+            <h2 class="main-section-title">Function declarations</h2>
+          </header>
+          <article class="main-article">
+            <p class="main-article-text">
+              A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+            </p>
+            <ul class="main-article-pointed">
+              <li class="main-article-text">The name of the function.</li>
+              <li class="main-article-text">A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+              <li class="main-article-text">The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+            </ul>
+            <p class="main-article-text">For example, the following code defines a simple function named square:</p>
+            <code class="main-article-code">function square(number) { return number * number; }</code>
+            <p class="main-article-text">
+              The function square takes one argument, called number. The function consists of one statement that says to return the argument of the
+              function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.
+            </p>
+            <code class="main-article-code">return number * number;</code>
+            <p class="main-article-text">
+              Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function
+              changes the value of the parameter, this change is not reflected globally or in the calling function.
+            </p>
+          </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+          <header class="main-section-header">
+            <h2 class="main-section-title">Reference</h2>
+          </header>
+          <article>
+            <ul class="main-article-pointed">
+              <li class="main-article-text">
+                All the documentation in this page is taken from
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+              </li>
+            </ul>
           </article>
         </section>
       </main>
