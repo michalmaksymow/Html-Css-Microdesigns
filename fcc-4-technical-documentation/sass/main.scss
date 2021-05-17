@@ -6,6 +6,8 @@ $color-code-background: #e6e6e6;
 $color-code-icon: #c2c2c2;
 $color-logo: #f0db4f;
 
+$color-link: #48009b;
+
 *,
 *::after,
 *::before {
@@ -105,7 +107,7 @@ body {
       font-weight: 400;
       letter-spacing: 0.5px;
     }
-  }
+  } //.main-section
 
   &-article {
     margin-left: 1.1rem;
@@ -137,8 +139,14 @@ body {
       }
     }
 
-    &-pointed{
+    &-pointed {
       margin-left: 1.5rem;
     }
-  }//.main-section
+
+    &-link:link,
+    &-link:visited {
+      color: $color-link;
+      text-decoration: none;
+    }
+  } //.main-article
 } //.main
