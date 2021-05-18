@@ -99,3 +99,7 @@ body {
     .main-article-link:link, .main-article-link:visited {
       color: #48009b;
       text-decoration: none; }
+
+@media only screen and (max-width: 796px) {
+  .navbar {
+    min-width: 270px; } }
