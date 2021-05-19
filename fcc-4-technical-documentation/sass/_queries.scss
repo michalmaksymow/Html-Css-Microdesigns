@@ -44,6 +44,19 @@
       } //.navbar-list.hidden
     }
 
+    &-toggle {
+      font-size: 2rem;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0.8rem;
+      transform: translate(-50%, -50%);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
     &.sticky {
       z-index: 2;
       position: sticky;
