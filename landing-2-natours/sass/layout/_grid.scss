@@ -12,7 +12,6 @@
 
   // Select all classes that starts with the string "col-"
   [class^="col-"] {
-    background-color: orange;
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
