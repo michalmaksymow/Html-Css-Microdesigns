@@ -129,6 +129,13 @@ body {
     .navbar-list {
       margin: 0 auto;
       max-width: 90%; }
+      .navbar-list.hidden {
+        display: none; }
+    .navbar.sticky {
+      z-index: 2;
+      position: sticky;
+      top: 0;
+      opacity: 0.95; }
   .main {
     max-height: fit-content;
     overflow-y: auto;
