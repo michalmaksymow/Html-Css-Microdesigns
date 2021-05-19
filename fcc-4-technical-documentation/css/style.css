@@ -6,10 +6,12 @@
   padding: 0;
   box-sizing: inherit; }
 
+html {
+  font-size: 100%; }
+
 body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 100%;
   font-weight: 400; }
 
 .body-flex {
@@ -23,6 +25,8 @@ body {
     padding: 0.75rem;
     display: flex;
     align-items: center; }
+  .navbar-list {
+    list-style-type: none; }
   .navbar-header-text {
     margin-left: 0.5rem; }
   .navbar-title {
@@ -101,5 +105,31 @@ body {
       text-decoration: none; }
 
 @media only screen and (max-width: 796px) {
+  html {
+    font-size: 90%; }
   .navbar {
-    min-width: 270px; } }
+    min-width: 250px; } }
+
+@media only screen and (max-width: 668px) {
+  html {
+    font-size: 80%; }
+  .navbar {
+    min-width: 230px; } }
+
+@media only screen and (max-width: 542px) {
+  html {
+    font-size: 100%; }
+  .body-flex {
+    flex-direction: column; }
+  .navbar {
+    min-width: auto;
+    height: auto; }
+    .navbar-header {
+      justify-content: center; }
+    .navbar-list {
+      margin: 0 auto;
+      max-width: 90%; }
+  .main {
+    max-height: fit-content;
+    overflow-y: auto;
+    overflow-x: hidden; } }

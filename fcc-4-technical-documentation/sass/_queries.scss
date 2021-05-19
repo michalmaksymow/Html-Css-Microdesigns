@@ -1,5 +1,49 @@
 @media only screen and (max-width: 796px) {
+  html {
+    font-size: 90%;
+  }
+
   .navbar {
-    min-width: 270px;
+    min-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  html {
+    font-size: 80%;
+  }
+
+  .navbar {
+    min-width: 230px;
+  }
+}
+
+@media only screen and (max-width: 542px) {
+  html {
+    font-size: 100%;
+  }
+
+  .body-flex {
+    flex-direction: column;
+  }
+
+  .navbar {
+    min-width: auto;
+    height: auto;
+
+    &-header {
+      justify-content: center;
+    }
+
+    &-list {
+      margin: 0 auto;
+      max-width: 90%;
+    }
+  }
+
+  .main {
+    max-height: fit-content;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
