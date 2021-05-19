@@ -16,10 +16,13 @@ $color-link: #48009b;
   box-sizing: inherit;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   box-sizing: border-box;
   font-family: $font-stack;
-  font-size: 100%;
   font-weight: 400;
 }
 
@@ -36,6 +39,10 @@ body {
     padding: 0.75rem;
     display: flex;
     align-items: center;
+  }
+
+  &-list {
+    list-style-type: none;
   }
 
   &-header-text {
