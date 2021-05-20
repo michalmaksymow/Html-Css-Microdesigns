@@ -36,12 +36,11 @@
     }
 
     &-list {
+      height: auto;
+      overflow: hidden;
       margin: 0 auto;
       max-width: 90%;
-
-      &.hidden {
-        display: none;
-      } //.navbar-list.hidden
+      transition: height 0.3s;
     }
 
     &-toggle {
@@ -49,7 +48,7 @@
       display: block;
       position: absolute;
       top: 50%;
-      right: 0.8rem;
+      right: 0.5rem;
       transform: translate(-50%, -50%);
 
       &:hover {

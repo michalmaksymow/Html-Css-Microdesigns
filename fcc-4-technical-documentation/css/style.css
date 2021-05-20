@@ -27,7 +27,7 @@ body {
     display: flex;
     align-items: center; }
   .navbar-list {
-    list-style-type: none; }
+    list-style: none; }
   .navbar-header-text {
     margin-left: 0.5rem; }
   .navbar-title {
@@ -40,6 +40,7 @@ body {
   .navbar-list-item {
     padding: 0.25rem 0.75rem; }
   .navbar-toggle {
+    padding: 0.25rem;
     display: none; }
 
 .nav-link:link, .nav-link:visited {
@@ -130,16 +131,17 @@ body {
     .navbar-header {
       justify-content: center; }
     .navbar-list {
+      height: auto;
+      overflow: hidden;
       margin: 0 auto;
-      max-width: 90%; }
-      .navbar-list.hidden {
-        display: none; }
+      max-width: 90%;
+      transition: height 0.3s; }
     .navbar-toggle {
       font-size: 2rem;
       display: block;
       position: absolute;
       top: 50%;
-      right: 0.8rem;
+      right: 0.5rem;
       transform: translate(-50%, -50%); }
       .navbar-toggle:hover {
         cursor: pointer; }
