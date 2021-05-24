@@ -96,6 +96,9 @@ body {
 .u-center-text {
   text-align: center !important; }
 
+.u-uppercase-text {
+  text-transform: uppercase !important; }
+
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
 
@@ -471,6 +474,41 @@ body {
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link {
+    transition: all 0.2s; }
+    .footer__link:link, .footer__link:visited {
+      color: #f7f7f7;
+      text-decoration: none;
+      display: inline-block; }
+    .footer__link:hover, .footer__link:active {
+      color: #55c57a;
+      transform: rotate(5deg) scale(1.05); }
+  .footer__copyright {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
 
 .row {
   max-width: 114rem;
