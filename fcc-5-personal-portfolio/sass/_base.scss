@@ -1,8 +1,10 @@
 // ------------------------------------------------------------
 // VARIABLES
 :root {
-  --color-white: #fff;
+  --color-white: #e9e9e9;
+  --color-white-lighten: #ffffff;
   --color-black: #000;
+  --color-main: #7952b3;
 
   --font-stack: "Roboto", sans-serif;
   --font-weight-default: 400;
@@ -26,9 +28,56 @@ body {
   box-sizing: border-box;
   font-family: var(--font-stack);
   font-weight: var(--font-weight-default);
+  color: var(--color-white);
 }
 
 // ------------------------------------------------------------
 // NAVBAR
 .navbar {
-}
+  position: static;
+  top: 0;
+  left: 0;
+  background-color: var(--color-main);
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  &__initials {
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    margin: 0 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: var(--color-white);
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1rem;
+
+      transition: color 0.2s;
+    }
+
+    &:hover {
+      color: var(--color-white-lighten);
+    }
+  }
+} //.navbar
