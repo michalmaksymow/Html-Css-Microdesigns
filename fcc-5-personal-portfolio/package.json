@@ -1,7 +1,7 @@
 {
-  "name": "technical-documentation",
+  "name": "personal-portfolio",
   "private": true,
-  "description": "A FreeCodeCamp.org project",
+  "description": "A freecodecamp.org project",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css --watch"
   },

@@ -41,6 +41,10 @@
       margin: 0 auto;
       max-width: 90%;
       transition: height 0.3s;
+
+      &.hidden {
+        height: 0;
+      }
     }
 
     &-toggle {
@@ -62,7 +66,7 @@
       top: 0;
       opacity: 0.95;
     }
-  }
+  } //.navbar
 
   .main {
     max-height: fit-content;
