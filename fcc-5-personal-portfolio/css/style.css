@@ -4,6 +4,10 @@
   --color-black: #000;
   --color-main: #7952b3;
   --color-supplementary: #ffe484;
+  --color-background-light: #fcfcfc;
+  --color-background-dark: #f0f0f0;
+  --color-font-main: #212529;
+  --color-font-supplementary: #495057;
   --font-stack: "Roboto", sans-serif;
   --font-weight-default: 400; }
 
@@ -24,7 +28,8 @@ body {
   color: var(--color-white); }
 
 .navbar {
-  position: static;
+  position: sticky;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: var(--color-main);
@@ -80,3 +85,33 @@ body {
     .navbar__btn:active {
       transform: translateY(-1px);
       box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.2); }
+
+.section-welcome {
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.welcome__title {
+  font-size: 4.5rem;
+  font-weight: 200;
+  text-align: center;
+  color: var(--color-font-main); }
+  .welcome__title--name {
+    display: inline-block;
+    padding: 0 0.25rem;
+    font-style: italic;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-main) 50%);
+    background-size: 220%;
+    transition: all 0.5s; }
+    .welcome__title--name:hover {
+      background-position: 100%;
+      color: var(--color-white); }
+
+.welcome__subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  color: var(--color-font-supplementary); }
