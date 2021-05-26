@@ -1,0 +1,12 @@
+{
+  "name": "personal-portfolio",
+  "private": true,
+  "description": "A freecodecamp.org project",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css --watch"
+  },
+  "author": "mmxm",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

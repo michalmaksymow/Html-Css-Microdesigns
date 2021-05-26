@@ -1,0 +1,34 @@
+// ------------------------------------------------------------
+// VARIABLES
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+
+  --font-stack: "Roboto", sans-serif;
+  --font-weight-default: 400;
+}
+
+// ------------------------------------------------------------
+// BASE
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-stack);
+  font-weight: var(--font-weight-default);
+}
+
+// ------------------------------------------------------------
+// NAVBAR
+.navbar {
+}
