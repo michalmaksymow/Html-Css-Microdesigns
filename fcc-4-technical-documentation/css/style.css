@@ -136,6 +136,8 @@ body {
       margin: 0 auto;
       max-width: 90%;
       transition: height 0.3s; }
+      .navbar-list.hidden {
+        height: 0; }
     .navbar-toggle {
       font-size: 2rem;
       display: block;

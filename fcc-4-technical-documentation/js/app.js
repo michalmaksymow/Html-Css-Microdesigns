@@ -4,6 +4,8 @@ const sections = document.querySelectorAll(".main-section");
 const navbarToggleBtn = document.querySelector(".navbar-toggle");
 const navbarList = document.querySelector(".navbar-list");
 
+// =============================================================================
+// NAVBAR POSITION UPDATING
 const updatePosition = function () {
   let highestInView;
   for (const [_, section] of sections.entries()) {
@@ -41,22 +43,30 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
+// =============================================================================
 // NAVBAR ANIMATIONS
 const [iconTimes, iconBars] = ["fa-times", "fa-bars"];
 
 navbarToggleBtn.addEventListener("click", (e) => {
   const icon = navbarToggleBtn.querySelector(".fas");
   const isCollapsed = navbarList.getAttribute("data-collapsed") === "true";
+  toggleIcon(icon);
   if (!isCollapsed) {
-    icon.classList.remove(iconTimes);
-    icon.classList.add(iconBars);
     collapseSection(navbarList);
   } else {
-    icon.classList.remove(iconBars);
-    icon.classList.add(iconTimes);
     expandSection(navbarList);
   }
 });
+
+const toggleIcon = function (iconElement) {
+  if (iconElement.classList.contains(iconTimes)) {
+    iconElement.classList.remove(iconTimes);
+    iconElement.classList.add(iconBars);
+  } else {
+    iconElement.classList.remove(iconBars);
+    iconElement.classList.add(iconTimes);
+  }
+};
 
 const collapseSection = function (element) {
   // get the height of the element's inner content, regardless of its actual size
@@ -80,6 +90,17 @@ const collapseSection = function (element) {
     });
   });
 
+  element.addEventListener("transitionend", function (e) {
+    // remove this event listener so it only gets triggered once
+    element.removeEventListener("transitionend", arguments.callee);
+
+    // add hidden class to the element
+    element.classList.add("hidden");
+
+    // remove "height" from the element's inline styles
+    element.style.height = null;
+  });
+
   // mark the section as "currently collapsed"
   element.setAttribute("data-collapsed", "true");
 };
@@ -98,6 +119,9 @@ expandSection = function (element) {
 
     // remove "height" from the element's inline styles, so it can return to its initial value
     element.style.height = null;
+
+    // remove hidden class to display the contents
+    element.classList.remove("hidden");
   });
 
   // mark the section as "currently not collapsed"

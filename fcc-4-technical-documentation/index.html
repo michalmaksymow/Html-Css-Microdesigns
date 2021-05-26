@@ -4,15 +4,14 @@
 <!-- Copyright © Michał Maksymów (aka. mmxm) -->
 <!-- TODO: -->
 <!-- [ ] Debug responsive navigation on smaller screens -->
+<!-- [ ] Make navigation sticky on scroll -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Technical documentation</title>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -38,12 +37,12 @@
             <h3 class="navbar-subtitle">Unofficial documentation</h3>
           </div>
           <div class="navbar-toggle">
-            <i id="button-toggle-icon" class="fas fa-times"></i>
+            <i id="button-toggle-icon" class="fas fa-bars"></i>
           </div>
         </header>
 
         <!-- Navbar list -->
-        <ul data-collapsed="false" class="navbar-list">
+        <ul data-collapsed="true" class="navbar-list hidden">
           <li class="navbar-list-item">
             <a href="#Introduction" class="nav-link">Introduction</a>
           </li>

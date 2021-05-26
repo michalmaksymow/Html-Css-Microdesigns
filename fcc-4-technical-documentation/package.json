@@ -1,13 +1,11 @@
 {
   "name": "technical-documentation",
-  "version": "1.0.0",
+  "private": true,
   "description": "A FreeCodeCamp.org project",
-  "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css --watch"
   },
   "author": "mmxm",
-  "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0"
   }
