@@ -1,0 +1,13 @@
+{
+  "name": "component-1-modal-window",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css --watch"
+  },
+  "author": "mmxm",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
