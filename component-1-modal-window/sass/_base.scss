@@ -1,0 +1,77 @@
+// ------------------------------------------------------------
+// VARIABLES
+:root {
+  --color-white: #fff;
+  --color-grey: #e9e9e9;
+
+  --color-primary: #7d2ae8;
+}
+
+// ------------------------------------------------------------
+// BASE
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, var(--color-white), var(--color-grey));
+  font-family: "Poppins", sans-serif;
+}
+
+// ------------------------------------------------------------
+// CONTENT
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__modal-show {
+  &:link,
+  &:visited {
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-style: normal;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+    color: #e9e9e9;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    box-shadow: 0.3rem 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0.4rem 0.6rem 1rem rgba($color: #000000, $alpha: 0.3);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0.3rem 0.5rem 1.2rem rgba($color: #000000, $alpha: 0.3);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  z-index: 5;
+}
+
+.modal {
+}
