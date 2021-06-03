@@ -3,7 +3,7 @@
   "private": true,
   "description": "A freecodecamp.org project",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css --watch"
+    "start": "node-sass sass/main.scss css/style.css --watch"
   },
   "author": "mmxm",
   "devDependencies": {
