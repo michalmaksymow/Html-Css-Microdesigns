@@ -6,7 +6,6 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -23,6 +22,11 @@ body {
     animation-name: moveInLeft;
     animation-duration: 0.6s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -32,6 +36,10 @@ body {
     letter-spacing: 1.7rem;
     /* Same as animation-name, animation-duration, animation-timing-function */
     animation: moveInRight 0.6s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
