@@ -1,0 +1,13 @@
+{
+  "name": "fementor-1-card-component",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
