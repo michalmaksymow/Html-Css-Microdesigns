@@ -1,4 +1,5 @@
 /50projects50days/
 /OmnifoodContents/
 
+.DS_Store
 *node_modules/
